@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title>Page Title</title>
+			<link rel="stylesheet" href="./styles.css">
+		</head>
+		<body>
+			<div class="container">
+				<div class="nav-wrapeer">
+					<div class="left-side">
+						<div class="nav-link-wrapper">
+							<a href="index.html">Home</a>
+						</div>
+						<div class="nav-link-wrapper">
+							<a href="about.html">About</a>
+						</div>
+					</div>
+
+					<div class="right-side">
+						<div>JORDAN HUDGENS</div>
+					</div>
+				</div>
+<style>
+.abc-wrap {
+	display:flex;
+	flex-wrap: wrap;
+	padding:5px;
+}
+.abc-wrap  .abc-list {
+
+	width:50%;
+	box-sizing: border-box;
+	padding: 5px;
+
+}
+.abc-wrap  .abc-list > .abc-box {
+	border:1px solid red;
+
+}
+#jagged-page {
+    padding: 3em;
+    max-width: 500px;
+}
+#jagged-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0%;
+    padding-bottom: 37%;
+}
+#jagged-wrapper img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+#jagged-wrapper::after {
+    content: "";
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1" preserveAspectRatio="none"><polygon style="fill:white;" points="1,0 1,1 0,1 "/></svg>');
+    background-size: 30px 30px;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    z-index: 2;
+}
+</style>
+				<div class="abc-wrap">
+					<div class="abc-list" >
+						<div class="abc-box" style="height:30px;">
+							11
+						</div>
+
+					</div>
+					<div class="abc-list" >
+						<div class="abc-box" style="height:40px;">
+							22
+						</div>
+					</div>
+					<div class="abc-list" >
+						<div class="abc-box" style="height:50px;">
+							33
+						</div>
+					</div>
+					<div class="abc-list" >
+						<div class="abc-box" style="height:30px;">
+							44
+						</div>
+					</div>
+				</div>
+				<div id="jagged-page">
+    <div id="jagged-wrapper">
+        <img src="https://res.cloudinary.com/css-tricks/image/fetch/w_600,q_auto,f_auto/https://cdn4.buysellads.net/uu/7/64571/1588623406-16708.jpg" />
+    </div>
+</div>
+				
+			</div>
+		</body>
+	</html>

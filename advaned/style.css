@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+* {
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --primary-color: #752914;
+    --secondary-color: #6397AF;
+}
+
+.aaa {
+    background: var(--secondary-color);
+}
+.bbb {
+    background: var(--primary-color);
+}
