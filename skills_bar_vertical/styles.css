@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin:0;
+    padding:0;
+}
+.container {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    background: linear-gradient(#1B1464 0,#0652DD 30%);
+
+}
+
+.container .graph-wrap{
+    position: relative;
+    padding:0 20px;
+    border-left:2px solid #000;
+    border-bottom:2px solid #000;
+    display:flex;
+}
+.container .graph-wrap .skills {
+    position: relative;
+    display:flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    width:100px;
+    height: 300px;
+
+}
+.container .graph-wrap .skills .percent{
+    padding: 5px 0;
+    color:#fff;
+}
+.container .graph-wrap .skills .bar{
+    position: relative;
+    width: 30px;
+    background:linear-gradient(#e77f67,#e15f41);
+    transition: 0.5s;
+}
+.container .graph-wrap .skills .bar::before {
+    content:'';
+    display:block;
+    position: absolute;
+    left:0;
+    top:0;
+    width:50%;
+    height: 100%;
+    background:linear-gradient(#f3a683,#f19066);
+}
+.container .graph-wrap .skills  .title {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    width:100%;
+    transform:translate(-50%, 0);
+    text-align: center;
+    color:#fff;
+}
