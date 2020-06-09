@@ -1,0 +1,37 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+}
+body {
+
+    height:100vh;
+}
+.button {
+    width: 50px;
+    height: 50px;
+    font-size: 25;
+    margin:2px;
+    cursor:pointer;
+    background: #ff0000;
+    border:none;
+    color:#ffffff;
+    outline: none !important;
+}
+.textview{
+    width: 202px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+}
+.main {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bg{
+    background: linear-gradient(to right, #f40044, #cc00ff);
+
+    height:100%
+}
