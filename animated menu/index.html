@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Animated Menu Indicator</title>
+</head>
+<body>
+    <nav>
+        <div id="marker"></div>
+        <a href="#">aaa</a>
+        <a href="#">bbbddd</a>
+        <a href="#">ccc</a>
+        <a href="#">ddd</a>
+        <a href="#">eee</a>
+    </nav>
+    <script>
+
+        var marker = document.querySelector('#marker');
+        const item = document.querySelectorAll('nav a');
+
+        function Indicator(e){
+            console.log(e);
+            marker.style.left = e.offsetLeft+"px";
+            marker.style.width = e.offsetWidth+"px";
+        }
+
+        item.forEach(link => {
+
+            link.addEventListener('click' ,(e)=>{
+                Indicator(e.target);
+            })
+        })
+
+    </script>
+</body>
+</html>
