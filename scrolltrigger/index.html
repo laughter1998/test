@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>ScrollTrigger | GSAP</title>
+</head>
+<body>
+    <section>
+        <h2>Scroll To Begin</h2>
+    </section>
+    <div class="box">
+        <h2 class="text1">Scroll Trigger is Awesome</h2>
+        <h2 class="text2">This is My First Code</h2>
+        <h2 class="text3">How it is?</h2>
+        <img src="http://old.ytfishing.co.kr/admin/image/goan_woo.jpg" class="logo" alt="">
+    </div>
+    <div class="box2">
+        <h2 class="text4">눈뜨면 터지는 수도권 감염</h2>
+        <h2 class="text5">밀집도 최소화 조치</h2>
+        <h2 class="text6">등교 인원을 제한</h2>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+<script type="text/javascript" >
+    gsap.timeline({
+        scrollTrigger: {
+            trigger:".box",
+            start: "center center", //Animation start at this point
+            end : "bottom top",//Animation end at this point
+            markers: false,
+            scrub : true,
+            pin: true
+        }
+    })
+    .from(".text1", {x : innerWidth * 1})
+    .from(".text2", {x : innerWidth * -1})
+    .from(".text3", {x : innerWidth * 1})
+    .from(".logo", {
+        y : innerHeight * 1,
+        rotate : 360
+    })
+
+    gsap.timeline({
+        scrollTrigger: {
+            trigger:".box2",
+            start: "center center", //Animation start at this point
+            end : "bottom top",//Animation end at this point
+            markers: false,
+            scrub : true,
+            pin: true
+        }
+    })
+    .from(".box2", {opacity :0})
+    .from(".text4", {y : innerHeight * 1})
+    .from(".text5", {y : innerHeight * 1})
+    .from(".text6", {y : innerHeight * 1})
+</script>
+</body>
+</html>
