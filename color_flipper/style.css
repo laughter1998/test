@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+    outline:none;
+}
+a {
+    text-decoration: none;
+}
+nav > div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 1px solid #000; */
+    box-shadow: 0 4px 7px  #888;
+
+    height: 30px;
+    background: #fff;
+}
+nav > div h4 {
+    margin-left: 10px;
+}
+
+nav > div > div {
+    margin-right: 10px;
+}
